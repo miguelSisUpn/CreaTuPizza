@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000F063B1EDBCA28000AE2EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F063A1EDBCA28000AE2EA /* AppDelegate.swift */; };
+		000F063D1EDBCA28000AE2EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F063C1EDBCA28000AE2EA /* ViewController.swift */; };
+		000F06401EDBCA28000AE2EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000F063E1EDBCA28000AE2EA /* Main.storyboard */; };
+		000F06431EDBCA28000AE2EA /* creaPizza.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 000F06411EDBCA28000AE2EA /* creaPizza.xcdatamodeld */; };
+		000F06451EDBCA28000AE2EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000F06441EDBCA28000AE2EA /* Assets.xcassets */; };
+		000F06481EDBCA28000AE2EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000F06461EDBCA28000AE2EA /* LaunchScreen.storyboard */; };
+		000F06541EDBD6E6000AE2EA /* sizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F06531EDBD6E6000AE2EA /* sizeViewController.swift */; };
+		000F06561EDBD75A000AE2EA /* doughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F06551EDBD75A000AE2EA /* doughViewController.swift */; };
+		000F065A1EDBE903000AE2EA /* ingredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F06591EDBE903000AE2EA /* ingredientsViewController.swift */; };
+		000F065C1EDBED37000AE2EA /* orderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000F065B1EDBED37000AE2EA /* orderViewController.swift */; };
+		001F04BB1EDCB40700AF3C84 /* cheeseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001F04BA1EDCB40700AF3C84 /* cheeseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000F06371EDBCA28000AE2EA /* creaPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = creaPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000F063A1EDBCA28000AE2EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		000F063C1EDBCA28000AE2EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		000F063F1EDBCA28000AE2EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		000F06421EDBCA28000AE2EA /* creaPizza.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = creaPizza.xcdatamodel; sourceTree = "<group>"; };
+		000F06441EDBCA28000AE2EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000F06471EDBCA28000AE2EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		000F06491EDBCA28000AE2EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000F06531EDBD6E6000AE2EA /* sizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sizeViewController.swift; sourceTree = "<group>"; };
+		000F06551EDBD75A000AE2EA /* doughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = doughViewController.swift; sourceTree = "<group>"; };
+		000F06591EDBE903000AE2EA /* ingredientsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ingredientsViewController.swift; sourceTree = "<group>"; };
+		000F065B1EDBED37000AE2EA /* orderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = orderViewController.swift; sourceTree = "<group>"; };
+		001F04BA1EDCB40700AF3C84 /* cheeseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cheeseViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000F06341EDBCA27000AE2EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000F062E1EDBCA27000AE2EA = {
+			isa = PBXGroup;
+			children = (
+				000F06391EDBCA28000AE2EA /* creaPizza */,
+				000F06381EDBCA28000AE2EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000F06381EDBCA28000AE2EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000F06371EDBCA28000AE2EA /* creaPizza.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000F06391EDBCA28000AE2EA /* creaPizza */ = {
+			isa = PBXGroup;
+			children = (
+				000F063A1EDBCA28000AE2EA /* AppDelegate.swift */,
+				000F063C1EDBCA28000AE2EA /* ViewController.swift */,
+				000F063E1EDBCA28000AE2EA /* Main.storyboard */,
+				000F065B1EDBED37000AE2EA /* orderViewController.swift */,
+				000F06441EDBCA28000AE2EA /* Assets.xcassets */,
+				000F06461EDBCA28000AE2EA /* LaunchScreen.storyboard */,
+				000F06491EDBCA28000AE2EA /* Info.plist */,
+				000F06411EDBCA28000AE2EA /* creaPizza.xcdatamodeld */,
+				000F06531EDBD6E6000AE2EA /* sizeViewController.swift */,
+				000F06551EDBD75A000AE2EA /* doughViewController.swift */,
+				000F06591EDBE903000AE2EA /* ingredientsViewController.swift */,
+				001F04BA1EDCB40700AF3C84 /* cheeseViewController.swift */,
+			);
+			path = creaPizza;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000F06361EDBCA27000AE2EA /* creaPizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000F064C1EDBCA28000AE2EA /* Build configuration list for PBXNativeTarget "creaPizza" */;
+			buildPhases = (
+				000F06331EDBCA27000AE2EA /* Sources */,
+				000F06341EDBCA27000AE2EA /* Frameworks */,
+				000F06351EDBCA27000AE2EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = creaPizza;
+			productName = creaPizza;
+			productReference = 000F06371EDBCA28000AE2EA /* creaPizza.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000F062F1EDBCA27000AE2EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Miguelangel;
+				TargetAttributes = {
+					000F06361EDBCA27000AE2EA = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 56CEETDM2X;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 000F06321EDBCA27000AE2EA /* Build configuration list for PBXProject "creaPizza" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000F062E1EDBCA27000AE2EA;
+			productRefGroup = 000F06381EDBCA28000AE2EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000F06361EDBCA27000AE2EA /* creaPizza */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000F06351EDBCA27000AE2EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000F06481EDBCA28000AE2EA /* LaunchScreen.storyboard in Resources */,
+				000F06451EDBCA28000AE2EA /* Assets.xcassets in Resources */,
+				000F06401EDBCA28000AE2EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000F06331EDBCA27000AE2EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000F065A1EDBE903000AE2EA /* ingredientsViewController.swift in Sources */,
+				001F04BB1EDCB40700AF3C84 /* cheeseViewController.swift in Sources */,
+				000F06431EDBCA28000AE2EA /* creaPizza.xcdatamodeld in Sources */,
+				000F06541EDBD6E6000AE2EA /* sizeViewController.swift in Sources */,
+				000F06561EDBD75A000AE2EA /* doughViewController.swift in Sources */,
+				000F063D1EDBCA28000AE2EA /* ViewController.swift in Sources */,
+				000F063B1EDBCA28000AE2EA /* AppDelegate.swift in Sources */,
+				000F065C1EDBED37000AE2EA /* orderViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		000F063E1EDBCA28000AE2EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000F063F1EDBCA28000AE2EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		000F06461EDBCA28000AE2EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000F06471EDBCA28000AE2EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		000F064A1EDBCA28000AE2EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000F064B1EDBCA28000AE2EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000F064D1EDBCA28000AE2EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56CEETDM2X;
+				INFOPLIST_FILE = creaPizza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mad.creaPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		000F064E1EDBCA28000AE2EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56CEETDM2X;
+				INFOPLIST_FILE = creaPizza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mad.creaPizza;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000F06321EDBCA27000AE2EA /* Build configuration list for PBXProject "creaPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000F064A1EDBCA28000AE2EA /* Debug */,
+				000F064B1EDBCA28000AE2EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000F064C1EDBCA28000AE2EA /* Build configuration list for PBXNativeTarget "creaPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000F064D1EDBCA28000AE2EA /* Debug */,
+				000F064E1EDBCA28000AE2EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		000F06411EDBCA28000AE2EA /* creaPizza.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				000F06421EDBCA28000AE2EA /* creaPizza.xcdatamodel */,
+			);
+			currentVersion = 000F06421EDBCA28000AE2EA /* creaPizza.xcdatamodel */;
+			path = creaPizza.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 000F062F1EDBCA27000AE2EA /* Project object */;
+}
