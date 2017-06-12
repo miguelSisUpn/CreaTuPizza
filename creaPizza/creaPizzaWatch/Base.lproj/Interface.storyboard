@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--TamañoIC-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="TamañoIC" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="creaPizzaWatch" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Tamaño:" id="FMh-n5-qQj"/>
+                        <separator alignment="left" id="ysU-2b-25c"/>
+                        <picker height="100" alignment="left" focusStyle="stack" id="r8X-Wg-PuJ">
+                            <connections>
+                                <action selector="pckTamañoChangeWithIndex:" destination="AgC-eL-Hgc" id="b3b-JQ-UvB"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Seleccionar" id="fzw-W7-GAC">
+                            <connections>
+                                <action selector="clickSeleccionar" destination="AgC-eL-Hgc" id="jGk-4R-obj"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="pckTamaño" destination="r8X-Wg-PuJ" id="SkL-g9-PuM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--MasaIC-->
+        <scene sceneID="kQr-wT-cFV">
+            <objects>
+                <controller identifier="MasaIC" id="fh7-3m-mC9" customClass="masaInterfaceController" customModule="creaPizzaWatch_Extension">
+                    <items>
+                        <label alignment="left" text="Masa:" id="AJr-hY-nKr"/>
+                        <separator alignment="left" id="MSh-2A-EWZ"/>
+                        <picker height="100" alignment="left" id="Fpd-jD-mBK">
+                            <connections>
+                                <action selector="pckMasaChangeWithIndex:" destination="fh7-3m-mC9" id="sDT-3D-1zM"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Seleccionar" id="lL7-NC-5YQ">
+                            <connections>
+                                <action selector="clickSeleccionar" destination="fh7-3m-mC9" id="QIY-E4-d5u"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btnSeleccionar" destination="lL7-NC-5YQ" id="tUy-Il-uFw"/>
+                        <outlet property="pckMasa" destination="Fpd-jD-mBK" id="DJM-YX-tJH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="464" y="351"/>
+        </scene>
+        <!--QuesoIC-->
+        <scene sceneID="Z80-vI-RBq">
+            <objects>
+                <controller identifier="QuesoIC" id="i7J-d4-7MU" customClass="quesoInterfaceController" customModule="creaPizzaWatch_Extension">
+                    <items>
+                        <label alignment="left" text="Queso:" id="6fc-av-Fxh"/>
+                        <separator alignment="left" id="b8z-jD-LSx"/>
+                        <picker height="100" alignment="left" id="fXm-PF-xbJ">
+                            <connections>
+                                <action selector="pckQuesoChangeWithIndex:" destination="i7J-d4-7MU" id="uv0-La-iEh"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Seleccionar" id="D1x-I3-wve">
+                            <connections>
+                                <action selector="clickSeleccionar" destination="i7J-d4-7MU" id="bNn-Ko-bWY"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="btnSeleccionar" destination="D1x-I3-wve" id="tAS-dN-YqK"/>
+                        <outlet property="pckQueso" destination="fXm-PF-xbJ" id="q4W-Cq-4j7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="721" y="351"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="creaPizzaWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+        <!--IngredientesIC-->
+        <scene sceneID="6kG-pp-92y">
+            <objects>
+                <controller identifier="IngredientesIC" id="2d5-30-MQT">
+                    <items>
+                        <label alignment="left" text="Ingredientes:" id="ppq-24-HOn"/>
+                        <separator alignment="left" id="DLV-cd-rda"/>
+                        <switch width="1" alignment="left" title="Jamón" id="eTO-z2-gfN"/>
+                        <switch width="1" alignment="left" title="Piña" id="Ffh-bX-Sfu"/>
+                        <switch width="1" alignment="left" title="Pepperoni" id="YxP-wE-hl4"/>
+                        <switch width="1" alignment="left" title="Pavo" id="bW0-vY-hNI"/>
+                        <switch width="1" alignment="left" title="Salchicha" id="XIR-zz-nqa"/>
+                        <switch width="1" alignment="left" title="Aceituna" id="Xjk-fP-HkN"/>
+                        <switch width="1" alignment="left" title="Cebolla" id="Usr-dz-pbx"/>
+                        <switch width="1" alignment="left" title="Pimiento" id="V5f-bi-ftx"/>
+                        <button width="1" alignment="left" title="Ver Pedido" id="M8x-mn-883"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="966" y="510"/>
+        </scene>
+    </scenes>
+</document>
