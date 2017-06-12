@@ -112,23 +112,77 @@
         <!--IngredientesIC-->
         <scene sceneID="6kG-pp-92y">
             <objects>
-                <controller identifier="IngredientesIC" id="2d5-30-MQT">
+                <controller identifier="IngredientesIC" id="2d5-30-MQT" customClass="ingredientesInterfaceController" customModule="creaPizzaWatch_Extension">
                     <items>
                         <label alignment="left" text="Ingredientes:" id="ppq-24-HOn"/>
                         <separator alignment="left" id="DLV-cd-rda"/>
-                        <switch width="1" alignment="left" title="Jamón" id="eTO-z2-gfN"/>
-                        <switch width="1" alignment="left" title="Piña" id="Ffh-bX-Sfu"/>
-                        <switch width="1" alignment="left" title="Pepperoni" id="YxP-wE-hl4"/>
-                        <switch width="1" alignment="left" title="Pavo" id="bW0-vY-hNI"/>
-                        <switch width="1" alignment="left" title="Salchicha" id="XIR-zz-nqa"/>
-                        <switch width="1" alignment="left" title="Aceituna" id="Xjk-fP-HkN"/>
-                        <switch width="1" alignment="left" title="Cebolla" id="Usr-dz-pbx"/>
-                        <switch width="1" alignment="left" title="Pimiento" id="V5f-bi-ftx"/>
-                        <button width="1" alignment="left" title="Ver Pedido" id="M8x-mn-883"/>
+                        <switch width="1" alignment="left" title="Jamón" id="eTO-z2-gfN">
+                            <connections>
+                                <action selector="swtJamonActivoWithValue:" destination="2d5-30-MQT" id="xod-HO-Zjp"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Piña" id="Ffh-bX-Sfu">
+                            <connections>
+                                <action selector="swtPiñaActivoWithValue:" destination="2d5-30-MQT" id="za7-0B-cEn"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pepperoni" id="YxP-wE-hl4">
+                            <connections>
+                                <action selector="swtPepperoniActivoWithValue:" destination="2d5-30-MQT" id="wAH-hB-Ebh"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pavo" id="bW0-vY-hNI">
+                            <connections>
+                                <action selector="swtPavoActivoWithValue:" destination="2d5-30-MQT" id="8na-mI-nte"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Salchicha" id="XIR-zz-nqa">
+                            <connections>
+                                <action selector="swtSalchichaActivoWithValue:" destination="2d5-30-MQT" id="6s9-qd-9Vl"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Aceituna" id="Xjk-fP-HkN">
+                            <connections>
+                                <action selector="swtAceitunaActivoWithValue:" destination="2d5-30-MQT" id="ezP-Bz-2kq"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Cebolla" id="Usr-dz-pbx">
+                            <connections>
+                                <action selector="swtCebollaActivoWithValue:" destination="2d5-30-MQT" id="BJF-6V-shm"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" title="Pimiento" id="V5f-bi-ftx">
+                            <connections>
+                                <action selector="swtPimientoActivoWithValue:" destination="2d5-30-MQT" id="3RO-EN-9ur"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" title="Ver Pedido" id="M8x-mn-883">
+                            <connections>
+                                <action selector="clickSiguiente" destination="2d5-30-MQT" id="HJM-hr-LWw"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="btnVerPedido" destination="M8x-mn-883" id="qH4-Sr-Xyd"/>
+                        <outlet property="swtAceituna" destination="Xjk-fP-HkN" id="Q1b-ov-SmP"/>
+                        <outlet property="swtCebolla" destination="Usr-dz-pbx" id="jFH-I0-hVh"/>
+                        <outlet property="swtJamon" destination="eTO-z2-gfN" id="q11-om-F1J"/>
+                        <outlet property="swtPavo" destination="bW0-vY-hNI" id="tZx-dG-vSw"/>
+                        <outlet property="swtPepperoni" destination="YxP-wE-hl4" id="0Gq-SG-8Jq"/>
+                        <outlet property="swtPimiento" destination="V5f-bi-ftx" id="xON-yc-LXK"/>
+                        <outlet property="swtPiña" destination="Ffh-bX-Sfu" id="nDx-zQ-UcJ"/>
+                        <outlet property="swtSalchicha" destination="XIR-zz-nqa" id="IwI-Bk-bdo"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="966" y="510"/>
+            <point key="canvasLocation" x="962" y="465"/>
+        </scene>
+        <!--DetallePedidoIC-->
+        <scene sceneID="u3S-Ow-AUc">
+            <objects>
+                <controller identifier="DetallePedidoIC" id="Vjr-0c-NCW"/>
+            </objects>
+            <point key="canvasLocation" x="1219" y="368"/>
         </scene>
     </scenes>
 </document>
