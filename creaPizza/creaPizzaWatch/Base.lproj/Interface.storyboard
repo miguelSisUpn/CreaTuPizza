@@ -41,7 +41,7 @@
                     <items>
                         <label alignment="left" text="Masa:" id="AJr-hY-nKr"/>
                         <separator alignment="left" id="MSh-2A-EWZ"/>
-                        <picker height="100" alignment="left" id="Fpd-jD-mBK">
+                        <picker height="100" alignment="left" focusStyle="stack" id="Fpd-jD-mBK">
                             <connections>
                                 <action selector="pckMasaChangeWithIndex:" destination="fh7-3m-mC9" id="sDT-3D-1zM"/>
                             </connections>
@@ -67,7 +67,7 @@
                     <items>
                         <label alignment="left" text="Queso:" id="6fc-av-Fxh"/>
                         <separator alignment="left" id="b8z-jD-LSx"/>
-                        <picker height="100" alignment="left" id="fXm-PF-xbJ">
+                        <picker height="100" alignment="left" focusStyle="stack" id="fXm-PF-xbJ">
                             <connections>
                                 <action selector="pckQuesoChangeWithIndex:" destination="i7J-d4-7MU" id="uv0-La-iEh"/>
                             </connections>
@@ -180,9 +180,49 @@
         <!--DetallePedidoIC-->
         <scene sceneID="u3S-Ow-AUc">
             <objects>
-                <controller identifier="DetallePedidoIC" id="Vjr-0c-NCW"/>
+                <controller identifier="DetallePedidoIC" id="Vjr-0c-NCW" customClass="detallePedidoInterfaceController" customModule="creaPizzaWatch_Extension">
+                    <items>
+                        <group width="1" height="20" alignment="center" contentMode="center" layout="vertical" id="4Rk-mk-E5z">
+                            <items>
+                                <label alignment="center" text="Pedido" textAlignment="center" id="YTo-wM-Mt9"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="ulF-M4-gfb"/>
+                        <label alignment="left" text="Tamaño:" id="wRj-gv-dW9"/>
+                        <label alignment="right" text="Label" id="LzW-3U-ZMl"/>
+                        <label alignment="left" text="Masa:" id="5iZ-rN-pmT"/>
+                        <label alignment="right" text="Label" id="MsP-1o-muy"/>
+                        <label alignment="left" text="Queso:" id="Ogh-UN-5Ov"/>
+                        <label alignment="right" text="Label" id="4Wk-UA-imn"/>
+                        <label alignment="left" text="Ingredientes:" id="7k5-wT-JHe"/>
+                        <label alignment="right" text="Label" textAlignment="right" numberOfLines="0" id="Jck-Vv-QiH"/>
+                        <separator alignment="left" id="XJf-uq-Szx"/>
+                        <button width="1" alignment="left" title="Confirmar" id="Aqu-Fb-sc3">
+                            <connections>
+                                <segue destination="70y-z6-29x" kind="push" id="BsC-I9-Dyr"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lblIngredientes" destination="Jck-Vv-QiH" id="BFH-CH-ObU"/>
+                        <outlet property="lblMasa" destination="MsP-1o-muy" id="R1Z-Jk-N0m"/>
+                        <outlet property="lblQueso" destination="4Wk-UA-imn" id="rJW-hW-KAj"/>
+                        <outlet property="lblTamaño" destination="LzW-3U-ZMl" id="q7Y-RG-7vC"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="1219" y="368"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="SRz-mP-KZ8">
+            <objects>
+                <controller id="70y-z6-29x">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Se envió el Pedido, Disfrútelo :)" numberOfLines="0" id="zuA-fb-GIk"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1433" y="320"/>
         </scene>
     </scenes>
 </document>

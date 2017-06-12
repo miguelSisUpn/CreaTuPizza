@@ -17,7 +17,7 @@ class masaInterfaceController: WKInterfaceController {
     
     var valorContext : Pizza!
     var masa : String = "Delgada"
-    let itemsMasa : [String] = ["Delgada","Mediana","Grande"]
+    let itemsMasa : [String] = ["Delgada","Crujiente","Gruesa"]
     
     
     override func awake(withContext context: Any?) {
